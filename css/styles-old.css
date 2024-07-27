@@ -187,11 +187,11 @@
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.portfolio-title {    - bez izm
+.portfolio-title {
   margin-bottom: 72px;
   text-transform: capitalize; 
   font-size: 36px;
-  line-height: 111%;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2E2F42;
@@ -487,9 +487,7 @@ padding-top: 72px;
 
 
 
-.modal-field {
-  margin-bottom: 8px;
-}
+
 
 
 
@@ -587,7 +585,7 @@ padding-top: 72px;
 
 .terms-link {
   line-height: 16px; 
-  line-height: 1.33333;
+  line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;

@@ -886,22 +886,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----- BACKDROP ----- */
 
 .backdrop {
@@ -936,8 +920,9 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 background-color: #fcfcfc;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 border-radius: 4px;
-padding: 24px;
+padding: 16px;
 padding-top: 72px;
+padding-bottom: 24px;
 }
 
 .modal-close-btn {
@@ -964,7 +949,7 @@ padding-top: 72px;
 .icon-close-btn {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+}
   .modal-close-btn:hover, .modal-close-btn:focus {
     background-color: #404bbf;
     border: none;
@@ -976,6 +961,7 @@ padding-top: 72px;
   }
 
   .modal-title {
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
@@ -1051,16 +1037,86 @@ padding-top: 72px;
     border-color: #4d5ae5;
   }
 
+  .modal-field {
+    margin-bottom: 24px;
+  }
+
   .modal-check-text {
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
   }
+  /* .modal-check-text span */
+  .modal-check-span {
+    flex-shrink: 0;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    display: inline-flex;
+  
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .terms-link {
+    line-height: 16px; 
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+  }
 
+  .modal-submit-btn {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    background-color: #4d5ae5;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  }
 
-
+  .modal-submit-btn:hover, 
+.modal-submit-btn:focus {
+  background-color:#404BBF;
+}
+/* .modal-check:checked + .modal-check-text span */
+.modal-check:checked + .modal-check-text .modal-check-span {
+  border: none;
+  background-color: #404bbf;
+  fill: #F4F4FD;
 }
 
+/* селектор дитини */
+/* .modal-check:checked + .modal-check-text > span  */
+.modal-check:checked + .modal-check-text > .modal-check-span {
+  margin-right: 8px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 
