@@ -315,7 +315,9 @@ button {
 }
 
 .mobmenu-address-link:hover,
-.mobmenu-address-link:focus {
+.mobmenu-address-link:focus, 
+.mobmenu-address-link.link-tel, 
+.mobmenu-hover-link {
   color: #404bbf;
 }
 
@@ -848,9 +850,6 @@ transform: translateY(0);
   row-gap: 72px;
   flex-wrap: wrap;
 }
-
-
-
 
 .footer-logo {
   display: flex;
