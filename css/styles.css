@@ -556,6 +556,10 @@ button {
     column-gap: 24px;
   }
 
+  .advantages-subtitle {
+    text-align: left;
+  }
+
   .advantages-item {
     width: calc((100% - 1 * 24px ) / 2);
   }
@@ -1020,7 +1024,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .footer-container {
     column-gap: 24px;
     /* gap: 72px 24px; */
-    align-items: center; 
+    align-items:flex-start; 
     justify-content: flex-start;
   }
 
